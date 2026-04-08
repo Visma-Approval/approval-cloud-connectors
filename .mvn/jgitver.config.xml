@@ -1,0 +1,21 @@
+<configuration xmlns="http://jgitver.github.io/maven/configuration/1.1.0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://jgitver.github.io/maven/configuration/1.1.0 https://jgitver.github.io/maven/configuration/jgitver-configuration-v1_1_0.xsd">
+    <strategy>MAVEN</strategy>
+    <useDefaultBranchingPolicy>true</useDefaultBranchingPolicy>
+    <regexVersionTag>s?jv([0-9]+(?:\.[0-9]+){0,2}(?:-[a-zA-Z0-9\-_]+)?)</regexVersionTag>
+    <branchPolicies>
+        <branchPolicy>
+            <pattern>(main)</pattern>
+            <transformations>
+                <transformation>IGNORE</transformation>
+            </transformations>
+        </branchPolicy>
+        <branchPolicy>
+            <pattern>(maintenance/.*)</pattern>
+            <transformations>
+                <transformation>IGNORE</transformation>
+            </transformations>
+        </branchPolicy>
+    </branchPolicies>
+</configuration>
