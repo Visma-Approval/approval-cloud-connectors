@@ -105,7 +105,7 @@ An example annotation defined connection factory is shown below;
 @ConnectionFactoryDefinition(name = "java:comp/env/SQSConnectionFactory", 
   description = "SQS Conn Factory", 
   interfaceName = "fish.payara.cloud.connectors.amazonsqs.api.AmazonSQSConnectionFactory", 
-  resourceAdapter = "amazon-sqs-rar-0.6.1-SNAPSHOT", 
+  resourceAdapter = "approval-amazon-sqs-rar-2.2.0", 
   minPoolSize = 2, 
   maxPoolSize = 2,
   transactionSupport = TransactionSupportLevel.NoTransaction,
