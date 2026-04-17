@@ -8,7 +8,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>fish.payara.cloud.connectors.kafka</groupId>
-    <artifactId>kafka-rar</artifactId>
+    <artifactId>approval-kafka-rar</artifactId>
     <packaging>rar</packaging>
     <name>Apache Kafka JCA RAR</name>
     <description>RAR for Apache Kafka JCA connector</description>
@@ -20,7 +20,7 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>kafka-jca-api</artifactId>
+            <artifactId>approval-kafka-jca-api</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

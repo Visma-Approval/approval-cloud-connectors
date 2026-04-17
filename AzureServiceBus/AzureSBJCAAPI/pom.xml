@@ -8,7 +8,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>fish.payara.cloud.connectors.azuresb</groupId>
-    <artifactId>azure-sb-jca-api</artifactId>
+    <artifactId>approval-azure-sb-jca-api</artifactId>
     <packaging>jar</packaging>
     <name>Azure Service Bus JCA Adapter API</name>
     <description>API classes for the Azure Service Bus JCA Adapter</description>
