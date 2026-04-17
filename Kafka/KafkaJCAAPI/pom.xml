@@ -8,7 +8,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>fish.payara.cloud.connectors.kafka</groupId>
-    <artifactId>kafka-jca-api</artifactId>
+    <artifactId>approval-kafka-jca-api</artifactId>
     <packaging>jar</packaging>
     <name>Apache Kafka JCA API</name>
     <description>API for Apache Kafka JCA connector</description>

@@ -8,7 +8,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>fish.payara.cloud.connectors.mqtt</groupId>
-    <artifactId>mqtt-rar</artifactId>
+    <artifactId>approval-mqtt-rar</artifactId>
     <packaging>rar</packaging>
     <name>MQTT JCA Adapter RAR</name>
     <description>RAR for the MQTT JCA Adapter</description>
@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>fish.payara.cloud.connectors.mqtt</groupId>
-            <artifactId>mqtt-jca-api</artifactId>
+            <artifactId>approval-mqtt-jca-api</artifactId>
             <version>${project.version}</version>
         </dependency>        
         <dependency>

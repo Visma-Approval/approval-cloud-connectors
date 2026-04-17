@@ -9,7 +9,7 @@
     </parent>
     
     <groupId>fish.payara.examples.mqtt</groupId>
-    <artifactId>mqtt-send-jaxrs-example</artifactId>
+    <artifactId>approval-mqtt-send-jaxrs-example</artifactId>
     <packaging>war</packaging>
 
     <name>MQTT Send JAXRS Example</name>
@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>fish.payara.cloud.connectors.mqtt</groupId>
-            <artifactId>mqtt-jca-api</artifactId>
+            <artifactId>approval-mqtt-jca-api</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
             <scope>provided</scope>

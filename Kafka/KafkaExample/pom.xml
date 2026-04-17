@@ -8,14 +8,14 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>fish.payara.cloud.connectors.kafka</groupId>
-    <artifactId>kafka-example</artifactId>
+    <artifactId>approval-kafka-example</artifactId>
     <packaging>ejb</packaging>
     <name>Kafka Example</name>
 
     <dependencies>
         <dependency>
             <groupId>fish.payara.cloud.connectors.kafka</groupId>
-            <artifactId>kafka-jca-api</artifactId>
+            <artifactId>approval-kafka-jca-api</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
         </dependency>

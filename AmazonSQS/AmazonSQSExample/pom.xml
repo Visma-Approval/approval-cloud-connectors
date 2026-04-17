@@ -47,8 +47,8 @@ holder.
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>fish.payara.cloud.connectors.amazonsqs</groupId>
-    <artifactId>amazon-sqs-example</artifactId>
-    <version>2.1.0</version>
+    <artifactId>approval-amazon-sqs-example</artifactId>
+    <version>2.2.0</version>
     <packaging>ejb</packaging>
 
     <name>Amazon SQS Example</name>
@@ -57,7 +57,7 @@ holder.
     <dependencies>
         <dependency>
             <groupId>fish.payara.cloud.connectors.amazonsqs</groupId>
-            <artifactId>amazon-sqs-jca-api</artifactId>
+            <artifactId>approval-amazon-sqs-jca-api</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
             <scope>provided</scope>
