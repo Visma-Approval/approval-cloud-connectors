@@ -94,7 +94,7 @@
         <awssdk.version>2.42.29</awssdk.version>
 
         <!-- JaCoCo -->
-        <jacoco.version>0.8.12</jacoco.version>
+        <jacoco.version>0.8.14</jacoco.version>
 
         <!-- SonarQube -->
         <sonar.projectKey>approval-cloud-connectors</sonar.projectKey>
