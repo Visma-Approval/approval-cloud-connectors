@@ -2,22 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>fish.payara.cloud.connectors</groupId>
-        <artifactId>approval-cloud-connectors</artifactId>
+        <groupId>com.visma.approval</groupId>
+        <artifactId>cloud-connectors</artifactId>
         <version>1.0.0</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     
     <groupId>fish.payara.examples.mqtt</groupId>
-    <artifactId>approval-mqtt-send-jaxrs-example</artifactId>
+    <artifactId>mqtt-send-jaxrs-example</artifactId>
     <packaging>war</packaging>
 
     <name>MQTT Send JAXRS Example</name>
 
     <dependencies>
         <dependency>
-            <groupId>fish.payara.cloud.connectors.mqtt</groupId>
-            <artifactId>approval-mqtt-jca-api</artifactId>
+            <groupId>com.visma.approval.mqtt</groupId>
+            <artifactId>mqtt-jca-api</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
             <scope>provided</scope>
