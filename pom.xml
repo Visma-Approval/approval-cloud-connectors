@@ -38,7 +38,8 @@
     only if the new code is made subject to such option by the copyright
     holder.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.visma.approval</groupId>
     <artifactId>cloud-connectors</artifactId>
@@ -77,14 +78,14 @@
         </snapshotRepository>
     </distributionManagement>
     <modules>
-        <module>Kafka/KafkaJCAAPI</module>
-        <module>Kafka/KafkaRAR</module>
+<!--        <module>Kafka/KafkaJCAAPI</module>-->
+<!--        <module>Kafka/KafkaRAR</module>-->
         <module>AmazonSQS/AmazonSQSJCAAPI</module>
         <module>AmazonSQS/AmazonSQSRAR</module>
-        <module>MQTT/MQTTJCAAPI</module>
-        <module>MQTT/MQTTRAR</module>
-        <module>AzureServiceBus/AzureSBJCAAPI</module>
-        <module>AzureServiceBus/AzureSBRAR</module>
+<!--        <module>MQTT/MQTTJCAAPI</module>-->
+<!--        <module>MQTT/MQTTRAR</module>-->
+<!--        <module>AzureServiceBus/AzureSBJCAAPI</module>-->
+<!--        <module>AzureServiceBus/AzureSBRAR</module>-->
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,8 +99,25 @@
 
         <!-- SonarQube -->
         <sonar.projectKey>approval-cloud-connectors</sonar.projectKey>
-        <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.21.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>2.21.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>jakarta.platform</groupId>
@@ -115,7 +133,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
+
     <build>
         <pluginManagement>
             <plugins>
@@ -150,6 +168,20 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <configuration>
+                    <installAtEnd>true</installAtEnd>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <deployAtEnd>true</deployAtEnd>
+                </configuration>
             </plugin>
         </plugins>
     </build>
