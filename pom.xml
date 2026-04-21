@@ -91,7 +91,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
-        <awssdk.version>2.42.29</awssdk.version>
+        <awssdk.version>2.42.37</awssdk.version>
 
         <!-- JaCoCo -->
         <jacoco.version>0.8.12</jacoco.version>
